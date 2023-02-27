@@ -32,6 +32,8 @@ BiliBili_动态去广告 = type=http-response,requires-body=1,max-size=0,pattern
 
 美图秀秀_VIP解锁🔓 = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
 
+迅雷_VIP解锁🔓=type=http-response,pattern=https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js
+
 [URL Rewrite]
 //YouTude 去广告
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-IMG
@@ -46,3 +48,4 @@ DOMAIN,glores2.taisantech.com,REJECT
 
 [MITM]
 hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com
+xluser-ssl.xunlei.com
