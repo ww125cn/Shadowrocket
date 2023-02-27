@@ -53,4 +53,4 @@ URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJ
 DOMAIN,glores2.taisantech.com,REJECT
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,*.x-storm.com
+hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,*.x-storm.com*/
