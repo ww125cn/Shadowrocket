@@ -38,8 +38,7 @@ Documents_VIP解锁🔓=type=http-request,pattern=^https:\/\/license\.pdfexpert\
 
 Https抓包_VIP解锁🔓=type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/https.js
 
-StormSniffer_VIP解锁🔓=type=http-response,pattern= ^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/((user-profile\/)|(auth-device\/list\/))$ ,requires-body=1,script-path=https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferCrack.js
-
+StormSniffer_VIP解锁🔓=type=http-request,pattern=^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferHeader.js
 [URL Rewrite]
 //YouTude 去广告
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-IMG
@@ -53,4 +52,4 @@ URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJ
 DOMAIN,glores2.taisantech.com,REJECT
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,*.x-storm.com*/
+hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,*.x-storm.com
