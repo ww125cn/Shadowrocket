@@ -12,5 +12,11 @@
 
 Vivacut_VIP解锁🔓=type=http-response,pattern=^https:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/vip\/perform,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/vivacut.js
 
+youtube_去广告🪧 = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,binary-body-mode=1,max-size=3145728,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.js
+
+[URL Rewrite]
+//YouTude 去广告
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-IMG
+
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top
+hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com
