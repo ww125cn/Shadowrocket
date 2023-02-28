@@ -42,6 +42,15 @@ Https抓包_VIP解锁🔓=type=http-response,pattern=^https?:\/\/buy\.itunes\.ap
 //YouTude 去广告
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-IMG
 
+# > 虎牙直播
+^https?+:\/\/business\.msstatic\.com\/advertiser\/ - reject-200
+^https?:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/ - reject-img
+
+# > 高德地图
+^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject-200
+^https?:\/\/m5\.amap\.com\/ws\/valueadded\/ - reject
+^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/ - reject
+
 [Rule]
 #> bilibili
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
@@ -51,5 +60,10 @@ URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJ
 DOMAIN,glores2.taisantech.com,REJECT
 DOMAIN,pos.baidu.com,REJECT
 DOMAIN,business.msstatic.com,REJECT
+//驾考宝典去广告
+DOMAIN,p6-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,*.adukwai.com,REJECT
+DOMAIN,images.pinduoduo.com,REJECT
+DOMAIN,api-access.pangolin-sdk-toutiao.com,REJECT
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com
+hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com
