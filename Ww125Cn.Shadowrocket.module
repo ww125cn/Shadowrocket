@@ -51,6 +51,10 @@ Https抓包_VIP解锁🔓=type=http-response,pattern=^https?:\/\/buy\.itunes\.ap
 ^https?:\/\/m5\.amap\.com\/ws\/valueadded\/ - reject
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/ - reject
 
+# > 驾考宝典
+^https?:\/\/789\.kakamobi\.cn\/.+adver - reject-img
+^https?:\/\/smart\.789\.image\.mucang\.cn\/advert - reject-img
+
 [Rule]
 #> bilibili
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
@@ -66,4 +70,4 @@ DOMAIN-SUFFIX,*.adukwai.com,REJECT
 DOMAIN,images.pinduoduo.com,REJECT
 DOMAIN,api-access.pangolin-sdk-toutiao.com,REJECT
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com
+hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com,*.kakamobi.cn,smart.789.image.mucang.cn
