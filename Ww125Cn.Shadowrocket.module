@@ -38,6 +38,8 @@ Documents_VIP解锁🔓=type=http-request,pattern=^https:\/\/license\.pdfexpert\
 
 Https抓包_VIP解锁🔓=type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/https.js
 
+吾爱获取Cookie = type=http-response,pattern =https:\/\/www\.52pojie\.cn\/home\.php\?, requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
+
 [URL Rewrite]
 //YouTude 去广告
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-IMG
@@ -70,4 +72,4 @@ DOMAIN-SUFFIX,adukwai.com,REJECT
 DOMAIN,images.pinduoduo.com,REJECT
 DOMAIN,api-access.pangolin-sdk-toutiao.com,REJECT
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com,*.kakamobi.cn,smart.789.image.mucang.cn
+hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com,*.kakamobi.cn,smart.789.image.mucang.cn,www.52pojie.cn
