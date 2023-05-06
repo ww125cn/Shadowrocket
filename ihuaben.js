@@ -1,7 +1,7 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-{
+obj={
   "testGroup" : "A",
   "src" : "BIND",
   "isPaymentMember" : true,
