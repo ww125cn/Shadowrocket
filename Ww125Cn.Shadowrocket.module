@@ -8,8 +8,8 @@
 #!PS=去广告没效果的请安装证书或重新安装去广告的软件
 
 [Script]
-怡红院_解锁VIP功能🔓=type=http-response,pattern=^https?:\/\/api\.pxxgg\.xyz\/api\/v1\/users,requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/javdbvipcrack.js
-怡红院2_解锁VIP功能🔓=type=http-response,pattern=^https?:\/\/api\.pxxgg\.xyz\/api\/v1\/(movies\/.*\/play|startup),requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/javdbvipcrack.js
+怡红院_解锁VIP功能🔓 = type=http-response,pattern=^https?:\/\/api\.pxxgg\.xyz\/api\/v1\/users,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/javbdvipcrack.js
+怡红院2_解锁VIP功能🔓 = type=http-request,pattern=^https?:\/\/api\.pxxgg\.xyz\/api\/v1\/(movies\/.*\/play|startup),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/javdbvipcrack.js
 阿里云盘_解锁部分VIP功能🔓=type=http-response,pattern=^https?:\/\/(api|member)\.aliyundrive\.com ,requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
 万能变声器_VIP解锁=type=http-response,pattern=https://www.40sishi.com/voice/user/profile,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/voiceChanger.js
 七🐱小说_VIP解锁=type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
