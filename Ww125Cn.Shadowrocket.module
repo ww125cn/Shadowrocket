@@ -32,7 +32,9 @@ Https抓包_VIP解锁🔓=type=http-response,pattern=^https?:\/\/buy\.itunes\.ap
 # 阿里云盘签到cookie=type=http-response,pattern=https:\/\/auth.aliyundrive.com\/v2\/account\/token,requires-body=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js  
 
 Wechat_去微信公众号广告🪧 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad
-youtube_去广告🪧 = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,binary-body-mode=1,max-size=3145728,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.js
+youtube_去广告🪧 = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,binary-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js
+youtube_去广告🪧2 = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\?,requires-body=1,binary-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.beta.js
+
 BiliBili_开屏去广告🪧 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 BiliBili_推荐去广告🪧 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 BiliBili_追番去广告🪧 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
@@ -49,7 +51,11 @@ BiliBili_剧开启1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibi
 ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
 
 # > YouTude 去广告🪧
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-IMG
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
 
 # > 虎牙直播🪧
 ^https?+:\/\/business\.msstatic\.com\/advertiser\/ - reject-200
@@ -79,4 +85,4 @@ DOMAIN-SUFFIX,adukwai.com,REJECT
 DOMAIN-SUFFIX,images.pinduoduo.com,REJECT
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com,REJECT
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, youtubei.googleapis.com, *.googlevideo.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com,*.kakamobi.cn,smart.789.image.mucang.cn,www.52pojie.cn,api.revenuecat.com,www.40sishi.com,*.wtzw.com,*.aliyundrive.com,api.pxxgg.xyz,mars-prod.whalean.com,auth.aliyundrive.com
+hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com,*.kakamobi.cn,smart.789.image.mucang.cn,www.52pojie.cn,api.revenuecat.com,www.40sishi.com,*.wtzw.com,*.aliyundrive.com,api.pxxgg.xyz,mars-prod.whalean.com,auth.aliyundrive.com
