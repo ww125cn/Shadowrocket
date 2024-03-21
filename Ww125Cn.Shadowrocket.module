@@ -71,6 +71,8 @@ BiliBili_剧开启1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibi
 ^https?:\/\/smart\.789\.image\.mucang\.cn\/advert - reject-img
 
 [Rule]
+# > 屏蔽广告规则
+RULE-SET,https://whatshub.top/rule/AntiAD.list,REJECT
 # > bilibili🪧
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
