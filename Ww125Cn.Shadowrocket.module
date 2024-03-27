@@ -8,6 +8,7 @@
 #!PS=去广告没效果的请安装证书或重新安装去广告的软件
 
 [Script]
+元气桌面壁纸=type=http-response,pattern=^http[s]?:\/\/mobile-ios-wallpaper-api.zhhainiao.com\/v1\/user\/info,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yqzmbz.js
 薄荷壁纸解锁永久会员 = type=http-response,pattern=^https?:\/\/mars-prod\.whalean\.com\/hestia-service\/api\/(wpUser\/getUserInfo|wallpaper\/ai\/count\/detail),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/MintPaperVipCrack.js
 怡红院_解锁VIP功能🔓 = type=http-response,pattern=^https?:\/\/api\.pxxgg\.xyz\/api\/v1\/users,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/javbdvipcrack.js
 怡红院2_解锁VIP功能🔓 = type=http-request,pattern=^https?:\/\/api\.pxxgg\.xyz\/api\/v1\/(movies\/.*\/play|startup),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/javdbvipcrack.js
@@ -91,4 +92,4 @@ DOMAIN-SUFFIX,adukwai.com,REJECT
 DOMAIN-SUFFIX,images.pinduoduo.com,REJECT
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com,REJECT
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com,*.kakamobi.cn,smart.789.image.mucang.cn,www.52pojie.cn,api.revenuecat.com,www.40sishi.com,*.wtzw.com,*.aliyundrive.com,api.pxxgg.xyz,mars-prod.whalean.com,auth.aliyundrive.com
+hostname = %APPEND% mobile-ios-wallpaper-api.zhhainiao.com, *.kuwo.cn, *.lrts.me, medi.dxzzy321.top, -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, mp.weixin.qq.com, api.bilibili.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,ap?.bilibili.com,app.biliintl.com,ap?.biliapi.net, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com,xluser-ssl.xunlei.com,license.pdfexpert.com, buy.itunes.apple.com,business.msstatic.com,business.msstatic.com, cdnfile1.msstatic.com, m*.amap.com,*.kakamobi.cn,smart.789.image.mucang.cn,www.52pojie.cn,api.revenuecat.com,www.40sishi.com,*.wtzw.com,*.aliyundrive.com,api.pxxgg.xyz,mars-prod.whalean.com,auth.aliyundrive.com
