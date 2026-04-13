@@ -76,11 +76,11 @@ BiliBili_剧开启1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibi
 
 [Rule]
 # > 国内直链规则
-RULE-SET,https://whatshub.top/rule/China.list,DIRECT
+RULE-SET,https://yfamilys.com/rule/China.list,DIRECT
 # > 国外代理规则
-RULE-SET,https://whatshub.top/rule/Proxy.list,PROXY
+RULE-SET,https://yfamilys.com/rule/Proxy.list,PROXY
 # > 屏蔽广告规则
-RULE-SET,https://whatshub.top/rule/AntiAD.list,REJECT
+RULE-SET,https://yfamilys.com/rule/AntiAD.list,REJECT
 # > bilibili🪧
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
